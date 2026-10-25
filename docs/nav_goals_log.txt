@@ -1,0 +1,10 @@
+# Astropath Phase 3 nav goals — 2026-10-18T21:32:39.243116+00:00
+# spawn=(-3.5, 1.2, yaw=0.0)
+
+hallway_N: FAIL(FAILED)  xy=(0.00,1.50)  dt=37.7s
+room0_NW: FAIL(FAILED)  xy=(-5.00,4.50)  dt=26.4s
+hallway_E: FAIL(FAILED)  xy=(5.50,1.00)  dt=203.2s
+room2_SW: FAIL(FAILED)  xy=(-5.00,-4.50)  dt=60.6s
+hallway_S: FAIL(FAILED)  xy=(0.00,-1.50)  dt=33.2s
+
+SUMMARY: 0/5 goals succeeded

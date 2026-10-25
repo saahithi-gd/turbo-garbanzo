@@ -1,0 +1,54 @@
+# Colcon / ROS 2
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+# Imported via vcs (astropath.repos) — do not commit ROBOTIS trees
+ros2_ws/src/*
+!ros2_ws/src/.gitkeep
+# First-party Astropath packages (whitelist)
+!ros2_ws/src/astropath_sim/
+!ros2_ws/src/astropath_sim/**
+**/COLCON_IGNORE
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+.venv/
+venv/
+
+# ROS bags & logs
+*.bag
+*.bag/
+*.db3
+*.mcap
+rosbag2_*/
+*.log
+
+# Gazebo / Ignition
+.gazebo/
+.ignition/
+.gz/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Local env overrides
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+*.o
+*.so
+*.a
+compile_commands.json
+!ros2_ws/src/astropath_config/
+!ros2_ws/src/astropath_config/**

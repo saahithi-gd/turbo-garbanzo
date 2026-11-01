@@ -17,7 +17,6 @@ source ./scripts/env.sh
 # Astropath school_floor (Waffle + ArUco doors)
 ./scripts/run_school.sh              # GUI + PRIME offload
 
-
 # Mapping
 ./scripts/run_slam.sh --explore      # headless school + slam_toolbox + explorer
 ./scripts/save_map.sh                # save live /map (if remapping via SLAM)

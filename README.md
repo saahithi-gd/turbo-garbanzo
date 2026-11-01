@@ -2,8 +2,11 @@
 # ROS 2 Jazzy & Gazebo Turtlebot Nav2 Navigation
 
 Astropath is a ROS 2 Jazzy robotics project where a TurtleBot3 Waffle navigates a custom school-style world in Gazebo Harmonic. It covers mapping, AMCL localization, and Nav2 path planning for autonomous hallway routes. The sim includes dense rooms, narrow doors, and ArUco markers on doorways for room-level goals. The goal is a clear, end-to-end Nav2 portfolio demo of perception-linked mobile navigation.
-<img width="1709" height="942" alt="Screenshot 2026-11-01 at 10 58 05 PM" src="https://github.com/user-attachments/assets/bd8d1d2d-80b0-4e8a-9a1c-115b32db7feb" />
-See [docs/DECISIONS.md](docs/DECISIONS.md) and [LEARNING.md](LEARNING.md).
+<img width="1709" height="942" alt="Screenshot 2026-11-01 at 10 58 05 PM" 
+  src="https://github.com/user-attachments/assets/bd8d1d2d-80b0-4e8a-9a1c-115b32db7feb" />
+
+
+
 ## Quick start
 
 ```bash

@@ -1,6 +1,6 @@
-# ROS 2 Jazzy + Gazebo Turtlebot Nav2 Navigation
+# ROS 2 Jazzy & Gazebo Turtlebot Nav2 Navigation
 
-TurtleBot3 Waffle in a custom school-style Gazebo world: SLAM/mapping, Nav2 hallway navigation, and ArUco door markers for room goals.
+Astropath is a ROS 2 Jazzy robotics project where a TurtleBot3 Waffle navigates a custom school-style world in Gazebo Harmonic. It covers mapping, AMCL localization, and Nav2 path planning for autonomous hallway routes. The sim includes dense rooms, narrow doors, and ArUco markers on doorways for room-level goals. The goal is a clear, end-to-end Nav2 portfolio demo of perception-linked mobile navigation.
 
 ## Quick start
 
@@ -16,13 +16,7 @@ source ./scripts/env.sh
 
 # Astropath school_floor (Waffle + ArUco doors)
 ./scripts/run_school.sh              # GUI + PRIME offload
-./scripts/run_school.sh --headless   # server only
 
-# Regenerate ArUco PNGs (DICT_4X4_50 IDs 0–3)
-/usr/bin/python3 ./scripts/generate_aruco_markers.py
-
-# After school_floor is up: detect door marker 0 from the camera
-ros2 run astropath_sim verify_aruco_camera
 
 # Mapping
 ./scripts/run_slam.sh --explore      # headless school + slam_toolbox + explorer
@@ -33,9 +27,9 @@ ros2 run astropath_sim verify_aruco_camera
 ./scripts/run_nav.sh --gui                                    # Terminal A
 rviz2 -d /opt/ros/jazzy/share/nav2_bringup/rviz/nav2_default_view.rviz \
   --ros-args -p use_sim_time:=true                            # Terminal B
-./scripts/fix_nav_lifecycle.sh                              # if Nav2 looks stuck
+
 ./scripts/run_simple_route.sh                                 # Terminal C (~20s after A)
-# Or one-shot: ./scripts/run_nav_demo.sh
+
 ```
 
 ## Stack
